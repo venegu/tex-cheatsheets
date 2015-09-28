@@ -1,0 +1,56 @@
+\documentclass{article} % letter, article, report, book, memoir
+
+% Necessary packages 
+\usepackage{graphicx} % To add images  
+\graphicspath{ {images/} } % Setting the path to images
+\usepackage[english]{babel} % For tables 
+\usepackage{color} % Coloouuuuurrs!
+\usepackage[margin=0.8in]{geometry} 
+%\usepackage[document]{ragged2e} % To left justify stuff
+
+
+
+\begin{document}
+% Removes extra space between logo and title
+\setlength{\textfloatsep}{.01pt}
+
+% Adding ccnyacm logo
+\begin{figure}[t]
+\includegraphics[scale=0.5]{ccnylogo0}
+\centering
+\end{figure}
+
+% Preamble w/ information 
+\author{Lisa Maldonado \& Allen Kim}
+\title{Git Workshop Cheat Sheet}
+\date{October 8th, 2015}
+\maketitle
+
+% Explanatory text 
+\begin{center}
+This is an extended cheatsheet that includes the Git commands we covered in today's workshop as well as commands that we did not get the chance to cover. We hope you find this document helpful as you continue to use Git. \newline
+\end{center}
+
+% Subtitle for Table 
+\title{\large Git Commands}
+\centering
+
+% Table for Git Commands 
+\begin{center}
+    \begin{tabular}{ | l | p{6cm} |}
+    \hline
+    Command & Use \\ \hline
+    git \color{blue}init & Initialize a Git subdirectory \\ 
+    git \color{blue}clone & Clone a repository \\ 
+    git \color{blue}status & Check the status of your files  \\
+    
+    git \color{blue}add & Makes Git aware of new files and changes to existing files (aka staging files)  \\
+    
+    git \color{blue}diff & Displays changes made to files that have not been staged yet  \\
+    
+    \end{tabular}
+\end{center}
+
+
+
+\end{document}	
