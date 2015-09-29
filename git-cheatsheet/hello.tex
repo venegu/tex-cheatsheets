@@ -22,13 +22,13 @@
 
 % Preamble w/ information 
 \author{Lisa Maldonado \& Allen Kim}
-\title{Git Workshop Cheat Sheet}
+\title{Git Workshop Cheatsheet}
 \date{October 8th, 2015}
 \maketitle
 
 % Explanatory text 
 \begin{center}
-This is an extended cheatsheet that includes the Git commands we covered in today's workshop as well as commands that we did not get the chance to cover. We hope you find this document helpful as you continue to use Git. \newline
+This is an extended cheatsheet that includes the Git commands we covered in today's workshop as well as commands that we did not get the chance to cover. We hope you find this document helpful as you continue to use Git to version control your personal and professional projects.
 \end{center}
 
 % Subtitle for Table 
@@ -37,7 +37,7 @@ This is an extended cheatsheet that includes the Git commands we covered in toda
 
 % Table for Git Commands 
 \begin{center}
-    \begin{tabular}{ | l | p{6cm} |}
+    \begin{tabular}{ | l | p{7cm} |}
     \hline
     Command & Use \\ \hline
     git \color{blue}init & Initialize a Git subdirectory \\ 
@@ -47,6 +47,19 @@ This is an extended cheatsheet that includes the Git commands we covered in toda
     git \color{blue}add & Makes Git aware of new files and changes to existing files (aka staging files)  \\
     
     git \color{blue}diff & Displays changes made to files that have not been staged yet  \\
+    
+    git \color{blue}commit & "Commits" changes that have been added thus far - this will open in your default text editor \\ 
+    git \color{blue}commit -m "Type message here " & Shorthand for typing the message in the terminal \\ 
+    git \color{blue} commit  -a & Automatically adds all unstaged files \\
+    git \color{blue} commit -a -m "Type message here"  & Automatically adds all unstaged files and allows you to write your commit message in the terminal \\
+    git \color{blue}rm  & Removes the file and stages file removal \\
+    				& Note: Deleting a file doesn't update Git \\   
+    git \color{blue}rm --cached & Removes a file from being stages, but does not remove from your hard drive\\ 
+    git \color{blue}mv & Allows you to change a file name, remove the original file and add the new file with the new name \\ 
+    git \color{blue}log & Shows all commits in reverse chronological order, but not the changes made \\
+    git \color{blue}log -p & Similar to the previous command but shows actual changes \\
+    git \color{blue}log --stat & Adds to the previous command by including number of lines added/removed and total number of files and lines changed \\
+    git \color{blue}log & Does not include individual file names \\ 
     
     \end{tabular}
 \end{center}
